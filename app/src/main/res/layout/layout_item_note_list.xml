@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    app:strokeWidth="1dp"
+    app:strokeColor="@color/gainsboro"
+    app:cardElevation="5dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:weightSum="100"
+    android:gravity="center_vertical"
+    android:background="@color/white"
+    android:padding="10dp">
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="20"
+        android:background="@color/gainsboro">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TX"
+            android:id="@+id/note_title_icon"
+            android:textColor="@color/black"
+            android:textSize="35sp"
+            android:layout_centerInParent="true"
+           />
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="text"
+        android:id="@+id/note_title"
+        android:textColor="@color/black"
+        android:layout_weight="50"
+        android:textSize="25sp"
+        android:padding="10dp"/>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="30"
+        android:text="18:00"
+        android:id="@+id/note_time_stamp"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:padding="10dp"
+        />
+
+</LinearLayout>
+</com.google.android.material.card.MaterialCardView>

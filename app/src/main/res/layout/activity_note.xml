@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.NoteActivity"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <include layout="@layout/top_bar_note_layout"/>
+
+
+    <com.xavier.sqliteexample.LineEditText
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="top"
+        android:textSize="23sp"
+        android:textColor="@color/black"
+        android:id="@+id/line_layout"
+        android:imeOptions="flagNoExtractUi"/>
+</LinearLayout>
